@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>deyo-digital</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="container nav-container">
+          <div class="logo-container">
+            <img src="images/deyo logo.svg" alt="deyodigital" class="logo" />
+            <span class="logo-text">deyo digital</span>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#">About Us</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Services ▾</a>
+                <ul class="dropdown-content">
+                  <li><a href="#">Website Design</a></li>
+                  <li><a href="#">SEO Optimization</a></li>
+                  <li><a href="#">Google Ads</a></li>
+                  <li><a href="#">Strategy & Consulting</a></li>
+                  <li><a href="#">Domain Setup</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <a href="#" class="btn-primary">Pricing</a>
+        </div>
+      </header>
+
+      <main class="contact-section">
+        <div class="contact-image">
+          <img src="images/pic.svg" alt="person" />
+        </div>
+
+        <div class="contact-form-container">
+          <h1>Let's level up your brand, together</h1>
+          <p>
+            You can reach us anytime via
+            <strong>deyodigital@gmail.com</strong>
+          </p>
+
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+
+            <label for="phone">Phone number</label>
+            <input
+              type="number"
+              id="phone"
+              placeholder="(+)123456789"
+              required
+            />
+
+            <label for="message">How can we help?</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <div class="form-group">
+              <div class="services">
+                <p class="sp">Services</p>
+                <label><input type="checkbox" /> Website design</label>
+                <label><input type="checkbox" /> Google Advert</label>
+                <label><input type="checkbox" /> SEO</label>
+                <label><input type="checkbox" /> Strategy & Consulting</label>
+                <label><input type="checkbox" /> Domain Setup</label>
+                <label><input type="checkbox" /> Other</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Get started</button>
+          </form>
+
+          <div class="divider">Or</div>
+
+          <button class="btn-secondary">Book Appointment via Calendar</button>
+
+          <p id="successMessage" class="success-message"></p>
+        </div>
+      </main>
+
+      <!-- CONTACT CARD SECTION-->
+      <section class="contact-info">
+        <h4>Contact us</h4>
+        <h2>We'd love to hear from you</h2>
+        <p>Our friendly team is always here to chat.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="icon">
+              <img src="images/messgae icon.svg" alt="message-icon" />
+            </div>
+            <h3>Email</h3>
+            <p>Our friendly team is here to help.</p>
+            <a href="mailto:deyodigital@gmail.com">deyodigital@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon">
+              <img src="images/location icon.svg" alt="location-icon" />
+            </div>
+            <h3>Office</h3>
+            <p>Come say hello at our office HQ.</p>
+            <p>16 York Street, Toronto, M5J 0E6.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon">
+              <img src="images/call icon.svg" alt="call-icon" />
+            </div>
+            <h3>Phone</h3>
+            <p>Mon-Fri from 8am to 5pm.</p>
+            <p>(437) 267-7888</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER SECTION-->
+      <footer>
+        <div class="footer-container">
+          <div class="disclaimer-section">
+            <h3 class="disclaimer-heading">Disclaimer</h3>
+            <p>
+              Deyo Digital Limited is incorporated in Canada with the
+              registration number-1578041-1. We currently operate both in Canada
+              and the United State of America. Deyo digital representations of
+              results are aspirational statements about your business potential
+              growth and success. The success stories, testimonials, and case
+              studies are exceptional and not typical results for all our
+              clients. They do not guarantee that you or anyone else will
+              achieve the same outcomes. Individual results will always vary and
+              depend on various factors, including your business model,
+              industry, efforts, skills, experience, market conditions, and
+              other variables. Your reliance on our programs should be based on
+              your diligence and trust in our process.
+            </p>
+          </div>
+
+          <div class="main-footer-content">
+            <div class="footer-column company-info">
+              <div class="logo-text">
+                <img src="images/deyo logo.svg" alt="logo" />
+                <p>Deyo Digital</p>
+              </div>
+              <p class="company-mission">
+                Founded by David Adebayo in Toronto, Deyo Digital specializes in
+                enhancing corporate branding through strategic UI/UX design. We
+                partner with e-commerce and manufacturing companies to create
+                state-of-the-art digital experiences that drive results.
+              </p>
+
+              <div class="contact-item">
+                <img
+                  src="images/location.svg"
+                  alt="location"
+                  class="contact-icon"
+                />
+                <p>Toronto, Ontario, Canada</p>
+              </div>
+              <div class="contact-item">
+                <img src="images/call.svg" alt="call" />
+                <p>+1 (416) 555-0123</p>
+              </div>
+              <div class="contact-item">
+                <img src="images/mail.svg" alt="mail" />
+                <p>deyodigital@gmail.com</p>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.youtube.com/" class="social-icon"
+                  ><img src="images/youtube.svg" alt="youtube"
+                /></a>
+                <a href="https://www.linkedin.com" class="social-icon"
+                  ><img src="images/linkedin.svg" alt="linkedin"
+                /></a>
+                <a href="https://x.com/" class="social-icon"
+                  ><img src="images/twitter.svg" alt="twitter"
+                /></a>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Google Advert</a></li>
+                <li><a href="#">Web Design & Developmet</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Book Consultation</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-nav">
+          <a href="#">Privacy policy</a> | <a href="#">Terms & condition</a> |
+          <a href="#">Refund policy</a>
+        </div>
+      </footer>
+      <p id="jsStatus">JavaScript is not running</p>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

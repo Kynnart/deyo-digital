@@ -1,0 +1,514 @@
+body {
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #020b14;
+  color: #fff;
+}
+.container {
+  min-width: 160px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #020b14;
+  padding: 1rem 2rem;
+  position: relative;
+  top: 0%;
+  right: 0%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 40px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #020b14;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  z-index: 1000;
+}
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  color: #1da1f2;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1da1f2;
+}
+
+.btn-primary {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #71bae4;
+}
+
+/* Layout */
+.contact-section {
+  display: flex;
+  min-height: 90vh;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form-container {
+  flex: 1;
+  background-color: #04344c;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form-container p {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #dce3e8;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #e1e8ec;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.services {
+  display: grid;
+  margin-top: 5px;
+  gap: 15px 25px;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services p {
+  grid-column: 1 / -1;
+  font-weight: bold;
+}
+.sp {
+  margin-top: 10px;
+}
+
+.services label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #fff;
+  cursor: pointer;
+}
+.services-options input[type="checkbox"] {
+  accent-color: #1da1f2;
+  transform: scale(1.2);
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  background-color: #1da1f2;
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #1583c2;
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #9fb3c8;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #9fb3c8;
+  color: #9fb3c8;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #64aedc;
+  color: #fff;
+  border-color: #1da1f2;
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 1rem;
+  color: #00ffae;
+  font-weight: bold;
+  display: none;
+}
+.dropdown.show {
+  display: flex !important;
+}
+
+/* CONTENT CARD SECTION */
+.contact-info {
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #04344c;
+  margin-top: 50px;
+}
+
+.contact-info h4 {
+  font-size: 1rem;
+  color: #9fb3c8;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.contact-info p {
+  color: #cdd7df;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #04344c;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+}
+
+/* FOOTER SECTION */
+footer {
+  background: #05202d;
+  color: #e3edf3;
+  padding: 50px 20px;
+  line-height: 1.5;
+  margin-top: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CONTAINER */
+.footer-container {
+}
+
+/* DISCLAIMER */
+.disclaimer-section {
+  margin-bottom: 20px;
+}
+
+.disclaimer-heading {
+  color: #1da1f2;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* MAIN FOOTER CONTENT */
+.main-footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  text-align: center;
+}
+
+/* COMPANY INFO */
+.company-info .logo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #1da1f2;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-justify: inter-word;
+}
+
+.icon-circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #1da1f2;
+}
+
+.company-mission {
+  font-size: 14px;
+  color: #bcd2de;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* CONTACT DETAILS */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #dce3e8;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(29, 161, 242, 0.1);
+  border: 1px solid rgba(29, 161, 242, 0.3);
+  border-radius: 8px;
+  /* color: #1da1f2; */
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #1da1f2;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* OTHER COLUMNS */
+.footer-column h4 {
+  color: #1da1f2;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #e3edf3;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #1da1f2;
+}
+
+/* FOOTER BOTTOM NAV */
+.footer-bottom-nav {
+  text-align: center;
+  border-top: 1px dashed rgba(29, 161, 242, 0.5);
+  margin-top: 40px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #b9c7cc;
+}
+
+.footer-bottom-nav a {
+  color: #1da1f2;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  footer {
+    padding: 30px 15px;
+  }
+  .disclaimer-section {
+    font-size: 14px;
+  }
+  .footer-bottom-nav {
+    font-size: 12px;
+  }
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+p,
+label,
+input,
+textarea,
+a {
+  font-size: 0.9rem;
+}
